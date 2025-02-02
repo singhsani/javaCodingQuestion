@@ -1,0 +1,52 @@
+Q. Write a function to find out duplicate words in a
+given string?
+
+Approach
+1. Define a string.
+2. Convert the string into lowercase to make the comparison insensitive.
+3. Split the string into words.
+4. Two loops will be used to find duplicate words. Outer loop will select a word and
+Initialize variable count to 1. Inner loop will compare the word selected by outer
+loop with rest of the words.
+5. If a match found, then increment the count by 1 and set the duplicates of word to
+'0' to avoid counting it again.
+6. After the inner loop, if count of a word is greater than 1 which signifies that the
+word has duplicates in the string.
+
+Approach 2
+1. Define a string.
+2. Convert the string into lowercase to make the comparison insensitive.
+3. Split the string into words.
+4. using map
+5. make word as a key value in incremental manner
+6. check key are available increase value +1
+7. check value are grater than 1 print
+
+
+Q. Find the missing number in an array?
+Approach
+1. Calculate A = n (n+1)/2 where n is largest number in series 1…N.
+2. Calculate B = Sum of all numbers in given series
+3. Missing number = A – B
+
+Q. Write a java program to swap two string variables
+without using temp variable?
+Approach
+1. Append second string to first string and store in first string:
+a=a+b
+2. call the method substring(int beginning, int endindex)
+by passing beginindex as 0 and endindex as,
+a.length() - b.length():
+b = substring(0,a.length()-b.length());
+3. call the method substring(int beginindex) by passing
+b.length() as argument to store the value of initial
+b string in a
+a = substring(b.length());
+
+
+Q. How to print all permutations of a String in Java?
+Approach
+1. Define a string.
+2. Fix a character and swap the rest of the characters.
+3. Call the generatePermutation() for rest of the characters.
+4. Backtrack and swap the characters again.
